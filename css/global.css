@@ -2,7 +2,9 @@
     font-family: sans-serif;
     font-size: 14px;     
 } */
-
+body{
+    background-color: wheat;
+}
 .container{
     margin: 0 auto;
     border: 2px solid #000;
@@ -13,12 +15,8 @@
 
 .content{
     margin: 5px;
-    border: 1px slid black;
-    border-radius: 5px;
-    background-image: url(../img/desk_coffee_img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:initial;  
+    border: 1px solid black;
+    border-radius: 8px;    
 }
 
 /* CONFIG TITULO */
@@ -62,16 +60,20 @@ div.user{
 }
 /* CONFIG AREA DO CHAT */
 .chat-area{
-    padding: 4px;
+    border-radius: 8px ;
+    padding: 4px; 
+    background-image: url(../img/desk_coffee_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center; 
 }
-
 
 /* CONFIG PARA SEPARAR OS LADOS */
 .message-item{
+    margin: 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 8px;
 }
 
 
@@ -85,7 +87,6 @@ div.user{
 
 .message-user{
     /* background-color: lightgreen; */
-    background-color: rgba(2,147,119,255);
     padding: 5px;
     max-width: 150px;
     border-radius: 6px;
@@ -101,9 +102,11 @@ div.user{
 
 div.message-item .message-user{
     border-radius: 0px 10px 10px 10px;
+    background-color: whitesmoke;
 }
 div.message-item-user .message-user{
     border-radius: 10px 0px 10px 10px;
+    background-color: rgba(2,147,119,255);
 }
 
 
