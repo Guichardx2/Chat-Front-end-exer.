@@ -3,20 +3,24 @@
     font-size: 14px;     
 } */
 body{
-    background-color: wheat;
+    background-color: pink;
 }
 .container{
     margin: 0 auto;
     border: 2px solid #000;
     border-radius: 8px;
-    max-width: 380px;
+    max-width: 400px;
+    max-height: 600px;
     background-color: rgba(33,45,51,255);
 }
 
 .content{
     margin: 5px;
     border: 1px solid black;
-    border-radius: 8px;    
+    border-radius: 8px;
+    background-image: url(../img/desk_coffee_img.jpg);
+    background-repeat: no-repeat; 
+    background-position: initial;
 }
 
 /* CONFIG TITULO */
@@ -62,10 +66,8 @@ div.user{
 .chat-area{
     border-radius: 8px ;
     padding: 4px; 
-    background-image: url(../img/desk_coffee_img.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center center; 
+    max-height: 400px;
+    overflow: auto; 
 }
 
 /* CONFIG PARA SEPARAR OS LADOS */
@@ -116,10 +118,12 @@ fieldset.control{
     padding: 8px;
     display: flex;
     align-items: center;
+    justify-items: center;
 }
 
 form.sendMessage{
     border: none;
+    margin-left: 5px;
     display: flex;
     gap: 5px;
     align-items: center;
@@ -129,7 +133,7 @@ form.sendMessage{
 input#message{
   border: 1px solid black;
   border-radius: 20px;  
-  width: 300px;
+  width: 310px;
   height: 20px;
   padding: 4px;
   margin-top: 6px;
